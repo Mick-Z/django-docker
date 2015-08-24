@@ -1,7 +1,7 @@
 django-docker
 =============
 
-Demo Django App using Docker
+Docker image that can be used as a platform for a django app. Unlike the repo this was forked from, this doesn't contain a django app in the image.
 
 
 Dockerfile
@@ -13,14 +13,3 @@ Use this to build a new image
 With a tag for easier reuse
 
     $ sudo docker build  -t <your username>/django-docker .
-
-Running the container
-
-    $ sudo docker run -d -p :8000 <your username>/django-docker
-    
-Get your container's IP Address:
-
-    sudo docker inspect <container_id> | grep IPAddress | cut -d '"' -f 4
-
-Now go to `<your container's ip>:8000` in your browser
-
