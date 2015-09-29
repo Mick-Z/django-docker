@@ -6,9 +6,6 @@ RUN apt-get install -y python-dev \
                        supervisor \
                        git-core \
                        make \
-                       libmysqlclient-dev \
-                       mysql-server \
-                       python-mysqldb \
                        python-numpy
 RUN easy_install pip
 RUN pip install virtualenv
